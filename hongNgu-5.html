@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<link rel="stylesheet" type="text/css" href="css/hongNgu-5.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+		
+	<link rel="stylesheet" type="text/css" href="../parallax/css/bootstrap.min.css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<title>Hong Ngu 4</title>
+</head>
+	<style>
+		nav a{
+			color: #fff;
+			padding: 20px;
+			font-size: 20px;
+			border: #fff solid 1px;
+			margin: 5px;
+			background-color: rgba(0,0,0,.7);
+			text-decoration: none;
+		}
+
+		nav, a:hover {
+			color: red;
+			/*background-color: rgba(0,0,0,.7);*/
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: green;
+		}
+
+		nav, .dropdown-menu a:hover {
+			color: red;
+			/*background-color: rgba(0,0,0,.7);*/
+		}
+
+		/* button */
+		button {
+			color: #fff;
+			padding: 20px;
+			font-size: 20px;
+			border: #fff solid 1px;
+			margin: 5px;
+			background-color: rgba(0,0,0,.7);
+			text-decoration: none;
+		}
+
+		button:hover {
+			color: red;
+			/*background-color: rgba(0,0,0,.7);*/
+			text-decoration: none;
+		}
+
+		button:hover {
+			color: green;
+		}
+	</style>
+
+<body style="overflow-x: hidden;">
+
+	<div class="container-fluid header" id="header">
+		<div class="header-photo">
+
+			
+
+				<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+
+				<nav class="navbar navbar-expand-md" style=" padding: 20px;">
+			 <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				  </button>
+
+			  <div style="margin-left: 9%; letter-spacing: 8px;" class="collapse navbar-collapse" 			id="navbarSupportedContent">
+			    	<ul  class="navbar-nav mr-auto">
+					      <li class="nav-item active">
+					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="openpopupapp()">APPETIZERS <span class="sr-only">(current)</span></a>
+
+					        <!--<a style="color: #fff;" onclick="openpopup()">Appetizers</a>-->
+					      </li>
+					      
+					      <li class="nav-item dropdown">
+					        <a style=" padding-right: 30px; color: #fff;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          ENTREES
+					        </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent1()">WEEK ONE</a>
+					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent2()">WEEK TWO</a>
+					          <!--<div class="dropdown-divider"></div>-->
+					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent3()">WEEK THREE</a>
+					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent4()">WEEK FOUR</a>
+					</div>
+					      </li>
+					      <li class="nav-item">
+					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="openpopupdrinks()">DRINKS</a>
+					      </li>
+					      <li class="nav-item">
+					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="openpopupdesserts()">DESSERTS</a>
+					      </li>
+					      <li class="nav-item dropdown">
+					        <a style=" padding-right: 30px; color: #fff;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          CONTACT US
+					        </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupadd()">ADDRESS</a>
+					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupmap()">MAP</a>
+					</div>
+					      </li>
+					    </ul>
+			  </div>
+			</nav>
+			
+			<!-- Hong Ngu name and phone number -->
+
+			<h2>Hồng Ngự</h2>
+			<p>312-555-5555</p>
+			<h6><span class="italic" style="color: #fff;">Mu Cang Chai Vietnam</span></h6>
+		
+		</div>
+	</div>
+
+	<!-- Appetizer Section Text -->
+
+	<div class="container-fluid" id="app-text">
+		<div class="row" style="text-align: center;">
+			<div class="col-md-12" >
+				<p>Misc comments about our delicious mouth watering appetizers! We will be rolling out our menu one week at a time beging with Week 1. Feel free to preview the upcoming weeks menu items!</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Appetizers background photo -->
+	
+		<div class="container-fluid" style="padding: 0;" >
+			<div class="row">
+				<div class="col-md-12">
+					<div class="pimg1">
+						<div class="over-lay"></div>
+
+						<!-- appetizers button -->
+							<div class="ptext"></div>
+									<span id="border-apps" style="font-size: 25px;">Appetizers</span>
+										
+						<!--Appetizers Menu Items-->
+							<h3 class="menu-item menu-item1">Pho $7</h3>
+								<h5 style="color: #fff;">Slow cooked and seasoned to perfection!</h5><br>
+
+							<h3 class="menu-item menu-item2">Spring Rolls $9</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5><br>
+								
+							<h3 class="menu-item menu-item3">Soup $6</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5><br>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+
+		<!-- Entrees Text Section-->
+
+	<div class="container-fluid" id="entrees-text">
+		<div class="row" style="text-align: center;">
+			<div class="col-md-12" >
+				<p>Its here! Misc comments about our delicious mouth watering entrees! We will be rolling out our menu one week at a time beging with Week 1. Feel free to preview the upcoming weeks menu items!</p>
+			</div>
+		</div>
+	</div>	
+				
+			<!-- entrees background photo -->
+
+	<div class="container-fluid" style="padding: 0;" >
+			<div class="row">
+				<div class="col-md-12">
+					<div class="pimg2">
+						<div class="over-lay"></div>
+
+						<!-- entrees button -->
+							<div class="ptext"></div>
+									<span id="border-entrees" style="font-size: 25px;">Entrees</span>
+										
+						<!--<div class="menu-item">-->
+							<h3 class="menu-item menu-item1">Pho $7</h3>
+								<h5 style="color: #fff;">Slow cooked and seasoned to perfection!</h5><br>
+
+							<h3 class="menu-item menu-item2">Spring Rolls $9</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5><br>
+								
+							<h3 class="menu-item menu-item3">Soup $6</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5><br>
+							
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<!--<div class="container-fluid"  style="padding: 0;">
+		<div class="row" >
+			<div class="col" >
+				<div class="pimg2">
+				<div class="over-lay"></div>
+					<div class="ptext">
+						<span class="border"><a href="#" style="color: #fff;" onclick="openpopup()">Entrees</a> 
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	
+
+	<!-- Drinks Section Text -->
+
+	
+	<div class="container-fluid" id="drinks-text">
+		<div class="row" style="text-align: center;">
+			<div class="col-md-12" >
+				<p>Cool tropical drinks! Misc comments about our thirst quenching drinks! We will be rolling out our menu one week at a time beging with Week 1. Feel free to preview the upcoming weeks menu items!</p>
+			</div>
+		</div>
+	</div>
+	
+
+
+			<!-- Drinks background photo -->
+
+			<div class="container-fluid" style="padding: 0;" >
+			<div class="row">
+				<div class="col-md-12">
+					<div class="pimg3">
+						<div class="over-lay"></div>
+
+						<!-- drinks button -->
+							<div class="ptext"></div>
+									<span id="border-drinks" style="font-size: 25px;">Drinks</span>
+										
+						<!-- menu items -->
+							<h3 class="menu-item drinks-menu-item1">Pho $7</h3>
+								<h5 style="color: #fff;">Slow cooked and seasoned to perfection!</h5><br>
+
+							<h3 class="menu-item drinks-menu-item2">Spring Rolls $9</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5><br>
+								
+							<h3 class="menu-item drinks-menu-item3">Soup $6</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5><br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- Desserts Text Section -->
+
+	<div class="container-fluid text" id="desserts-text">
+		<div class="row" style="text-align: center;">
+			<div class="col-md-12" >
+				<p>Delectable Desserts are here! Misc comments about our delicious mouth watering desserts! We will be rolling out our menu one week at a time beging with Week 1. Feel free to preview the upcoming weeks menu items!</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Desserts Background photo -->
+
+	<div class="container-fluid" style="padding: 0; height: 490px;" >
+			<div class="row" style="height: 490px;">
+				<div class="col-md-12">
+					<div class="over-lay"></div>
+
+						<!-- Desserts button -->
+						<div class="ptext"></div>
+							<span id="border-desserts" style="font-size: 25px;">Desserts</span>
+
+							<!-- desserts menu items -->
+							<h3 class="menu-item desserts-menu-item">Pho $7</h3>
+								<h5 class="desserts-desc" style="color: #fff;">Slow cooked and seasoned to perfection!</h5><br>
+
+							<h3 class="menu-item desserts-menu-item">Spring Rolls $9</h3>
+								<h5 class="desserts-desc">Slow cooked and seasoned to perfection!</h5><br>
+								
+							<h3 class="menu-item desserts-menu-item">Soup $6</h3>
+								<h5 class="desserts-desc">Slow cooked and seasoned to perfection!</h5><br>
+						
+							
+					<div id="carouselExampleIndicators" class="carousel slide carousel" 			data-ride="carousel">
+							  <ol class="carousel-indicators">
+							    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							  </ol>
+				  		<div class="carousel-inner">
+				    		<div class="carousel-item active">
+				      			<img class="d-block w-100" src="../parallax/images/flan2.jpg" alt="Flan">
+				    		</div>
+
+				    		<div class="carousel-item">
+				      			<img class="d-block w-100" src="../parallax/images/banh-bo-dessert2.jpg" alt="Banh-Po">
+				    		</div>
+
+				    		<div class="carousel-item">
+				      			<img class="d-block w-100" src="../parallax/images/vietnam-flan2.jpg" alt="Vietnam-Flan">
+				    		</div>
+				  		</div>
+
+				  			<!--<a class="carousel-control-prev" href="#carouselExampleIndicators" 		role="button" 		data-slide="prev">
+				    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    			<span class="sr-only">Previous</span>
+				  			</a>
+
+				  			<a class="carousel-control-next" href="#carouselExampleIndicators"		 role="button" 		data-slide="next">
+				    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				   				 <span class="sr-only">Next</span>
+				  			</a>-->
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+			<!-- Fifth Photo About Us -->
+
+	<!--<div class="container-fluid text" style="padding: 0;">
+		<div class="row">
+			<div class="col">
+				<div class="pimg5">
+				<div class="over-lay"></div>
+					<div class="ptext">
+						<span class="border">
+						<a href="#" style="color: #fff;" onclick="openpopup()">About Us</a>
+						</span>
+					</div>
+				<div>
+			</div>
+		</div>
+	</div>-->
+
+<script>
+
+
+
+			/* Appetizers Menu popup window */
+
+			var mywindow;
+
+			function openpopupapp()
+			{
+				mywindow = window.open('app-menu.html', '_blank', 'height=600, width=1200, top=1900, left=0');
+			}
+
+			function closepopupapp() {
+				mywindow = window.close();
+			}
+
+			/* Entres Menu week 1 */
+
+			var mywindow;
+
+			function openpopupent1()
+			{
+				mywindow = window.open('app-menu.html', '_blank', 'height=600, width=1200, top=1900, left=0');
+			}
+
+			function closepopupent1() {
+				mywindowent1 = window.close();
+			}
+
+			/* Entres Menu week 2 */
+
+			var mywindowent1;
+
+			function openpopupent2()
+			{
+				mywindowent2 = window.open('entreesWeek-2.html', '_blank', 'height=600, width=1200, top=1900, left=0');
+			}
+
+			function closepopupent2() {
+				mywindowent2 = window.close();
+			}
+
+
+			/* Google Maps popup window */
+
+			var mywindowmap;
+
+			function openpopupmap()
+			{
+				mywindowmap = window.open('hongNguMap.html', '_blank', 'height=600, width=900, top=1900, left=0');
+			}
+
+			function closepopupmap() {
+				mywindowmap = window.close();
+			}
+
+			$(".add-to-cart").click(function(event){
+				event.preventDefault();
+				var name = $(this).attr("data-name");
+				var price = Number($(this).attr("data-price"));
+
+				shoppingCart.addItemToCart(name, price, 1)
+				displayCart();
+
+			});
+
+			$("#clear-cart").click(function(event){
+				shoppingCart.clearCart();
+				displayCart();
+			})
+
+				function displayCart() {
+
+					var cartArray = shoppingCart.listCart();
+					var output = "";
+
+					for (var i in cartArray) {
+						output += "<li>"+cartArray[i].name
+						+" "+cartArray[i].count
+						+" x "+cartArray[i].price
+						+" = "+cartArray[i].total
+						+" <button class='plus-item' data-name='"
+						+cartArray[i].name+"'>+</button>"
+						+" <button class='subtract-item' data-name='"
+						+cartArray[i].name+"'>-</button>"
+						+" <button class='delete-item' data-name='"
+						+cartArray[i].name+"'>x</button>"
+						+"</li>";
+					}
+					$("#show-cart").html(output);
+					$("#count-cart").html( shoppingCart.countCart() );
+					$('#total-cart').html( shoppingCart.totalCart() );
+				}
+
+				$("#show-cart").on("click", ".delete-item", function(event){
+					var name  = $(this).attr("data-name");
+					shoppingCart.removeItemFromCartAll(name);
+					displayCart();
+
+				});
+
+					$("#show-cart").on("click", ".subtract-item", function(event){
+						var name = $(this).attr("data-name");
+						shoppingCart.removeItemFromCart(name);
+						displayCart();
+					});
+
+					$("#show-cart").on("click", ".plus-item", function(event){
+						var name = $(this).attr("data-name");
+						shoppingCart.addItemToCart(name, 0, 1);
+						displayCart();
+					});
+				
+			
+
+	
+			// 7 shopping cart functions
+
+			var shoppingCart = {};
+			shoppingCart.cart = [];
+			shoppingCart.item = function(name, price, count){
+				this.name = name
+				this.price = price
+				this.count = count
+			};
+
+			// add item to cart
+			shoppingCart.addItemToCart = function (name, price, count) {
+				for (var i in this.cart) {
+					if (this.cart[i].name === name) {
+						this.cart[i].count+= count;
+						this.saveCart();
+						return;
+					}
+				}
+							//new
+				var item = new this.item(name, price, count);
+				this.cart.push(item);
+				this.saveCart();
+			}
+
+			// remove item from cart
+			shoppingCart.removeItemFromCart = function (name) {
+			 	for (var i in this.cart) {
+			 		if (this.cart[i].name === name) {
+			 			this.cart[i].count --;
+			 			if (this.cart[i].count === 0) {
+			 				this.cart.splice(i, 1);
+			 			}
+			 			break;
+			 		}
+			 	}
+			 	this.saveCart();
+			 } 
+
+
+	<script> $(function () {
+  				$('[data-toggle="tooltip"]').tooltip()
+			})</script>
+
+	<script src="../parallax/js/bsPage.js"></script>
+
+</body>
+</html>
+			
