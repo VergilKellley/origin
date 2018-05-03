@@ -87,7 +87,7 @@
 					          ENTREES
 					        </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					      <a href="#entrees-menu-text-box" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" >WEEK ONE</a> 				<!--onclick="openpopupent1()"-->
+					      <a href="#entrees-menu-text-box" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayEntreesMenu();" >WEEK ONE</a> 				<!--onclick="openpopupent1()"-->
 					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent2()">WEEK TWO</a>
 					          <!--<div class="dropdown-divider"></div>-->
 					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent3()">WEEK THREE</a>
@@ -95,18 +95,18 @@
 					</div>
 					      </li>
 					      <li class="nav-item">
-					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="openpopupdrinks()">DRINKS</a>
+					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayDrinksMenu();">DRINKS</a>
 					      </li>
 					      <li class="nav-item">
-					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="openpopupdesserts()">DESSERTS</a>
+					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayDessertMenu();">DESSERTS</a>
 					      </li>
 					      <li class="nav-item dropdown">
 					        <a style=" padding-right: 30px; color: #fff;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					          CONTACT US
 					        </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupadd()">ADDRESS</a>
-					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupmap()">MAP</a>
+					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayAddress();">ADDRESS</a>
+					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayMap();">MAP</a>
 					</div>
 					      </li>
 					    </ul>
@@ -289,6 +289,7 @@
 
 
 		<!-- Entrees Text Section-->
+<div id="entrees-container">
 		<div id="entrees-menu-text-box"></div>
 	<div class="container-fluid" id="entrees-text">
 		<div class="row" style="text-align: center;">
@@ -357,11 +358,12 @@
 				</div>
 			</div>
 		</div>
+</div>
 							
 
 	<!-- Drinks Section Text -->
 
-	
+<div id="drinks-container">
 	<div class="container-fluid" id="drinks-text">
 		<div class="row" style="text-align: center;">
 			<div class="col-md-12" >
@@ -432,8 +434,11 @@
 				</div>
 			</div>
 		</div>
+</div>
 
 	<!-- Desserts Text Section -->
+
+<div id="dessert-container">
 
 	<div class="container-fluid text" id="desserts-text">
 		<div class="row" style="text-align: center;">
@@ -505,10 +510,46 @@
 				</div>
 			</div>
 		</div>
+</div>
+
+
+		<footer>
+			<p>Darnell Kelley Web Design & Development &copy 2018</p>
+		</footer>
+
+
 
 		<script>
 			function displayAppsMenu() {
     var x = document.getElementById("apps-container");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
+function displayEntreesMenu() {
+    var x = document.getElementById("entrees-container");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function displayDrinksMenu() {
+    var x = document.getElementById("drinks-container");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function displayDessertMenu() {
+    var x = document.getElementById("dessert-container");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
