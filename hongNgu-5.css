@@ -15,9 +15,9 @@
 	/*border-top: 3px solid rgba(255, 255, 0, 1); /* yellow */
 }
 
-.container-fluid{
+/*.container-fluid{
 	display: block;
-}
+}*/
 
 
 /* header photo */
@@ -138,20 +138,20 @@ nav{
 
 
 /* appetizer button */
-#app-text {
+/*#app-text {
 	font-size: 20px;
 
 	/*background-color: rgba(218, 37, 29, 1); /* red */
 
-	background-color: #000; /* black */
-	color: #fff;
+	/*background-color: #000; /* black */
+	/*color: #fff;
 	/*color: #fff;*/
-	position: relative;
+	/*position: relative;
 	padding: 5px;
 	text-align: justify;
 	bottom: 0px;
 	z-index: 7;
-}
+}*/
 
 /* entrees button */
 
@@ -198,8 +198,8 @@ h4 {
 
 /* appetizers container */
 #apps-container {
-	height: 530px;
-	background-color: #000;
+	height: 640px;
+	background-color: red;
 }
 
 #entrees-container {
@@ -276,19 +276,19 @@ h4 {
 
 
 /* apps button */
-#button-apps {
+/*#button-apps {
 	position: absolute;
 	z-index: 2;
-	font-size: 25px;
+	font-size: 55px;
 	background-color: rgba(0,0,0,0.5);
-	color: #fff;
+	color: green;
 	top: 13%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 5px;
 	opacity: .5;
 	border-radius: 10%;
-}
+}*/
 
 /* entrees button */
 #button-entrees {
@@ -338,18 +338,19 @@ h4 {
 /* scrollable menu-background */
 .menu-background {
 	position: relative;
-	background-color: rgba(0,0,0,0.3);
+	top: 50%;
+	left: 53%;
+	transform: translate(-50%, -50%);
 	padding-bottom:5px;
 	padding-top: 15px;
-	left: 40%;
-	transform: translate(-50%, -50%);
-	width: 470px;
-	top: 53%;
+	width: 450px;
+	height: 580px;
+	color:blue;
+	text-align: left;
+	background-color: rgba(0,0,0,0.3);
+	font-size: 1.3rem;
 	border-radius: 10%;
 	z-index: 2;
-	color:#fff;
-	font-size: 1.3rem;
-	height: 300px;
 	overflow: scroll;
 	overflow-x: hidden;
 
@@ -357,12 +358,12 @@ h4 {
 
 img {
 	width: 100%;
-	height: 100%;
+	height: 640px;
 }
 
-.text-center h3 h5 {
-	text-align: center;
+.text-center, h3 h5 {
 	padding-top: 20px;
+	text-align: left;
 }
 
 h3 {
@@ -387,7 +388,7 @@ h3 {
 
 .text-center-desserts, h3 h5 {
 
-	text-align: center;
+	
 }
 
 footer p {
