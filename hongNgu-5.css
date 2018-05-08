@@ -6,7 +6,7 @@
 /* header container */
 .container-fluid.header {
 	position: relative;
-	height: 497px;
+	height: 640px;
 	width: 100vw;
 	/*margin-left: 50px;*/
 	padding: 0;
@@ -27,7 +27,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 497px;
+	height: 640px;
 	background-attachment: fixed;
 }
 
@@ -200,9 +200,13 @@ h4 {
 #apps-container {
 	height: 640px;
 	background-color: red;
+	display: none;
 }
 
 #entrees-container {
+
+	height: 640px;
+	background-color: red;
 	display: none;
 }
 
@@ -217,7 +221,7 @@ h4 {
 .pimg1 {
 	position: relative;
 	background-image: url('../images/food.jpg');
-	height:400px;
+	height:640px;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -356,12 +360,25 @@ h4 {
 
 }
 
+.menu-item-name p {
+	cursor: pointer;
+	color: #000;
+
+}
+
+.menu-item-description h5{
+	font-style: italic;
+	color: #000;
+}
+/* image size for appetizers, entrees, drinks and dessert menus images */
 img {
 	position: relative;
 	width: 100%;
-	height: 540px;
+	height: 640px;
+
 }
 
+/* appetizers menu change photo back to biker.jpeg */
 #xbox {
 	position: absolute;
 	left: 90%;
@@ -370,6 +387,8 @@ img {
 	color: blue;
 	font-size: 25px;
 	z-index: 10;
+	transition-duration: 5s;
+	-webkit-duration: width 2s;
 }
 
 .menu-background, h3 h5 {
@@ -397,10 +416,10 @@ h3 {
 
 }
 
-.qaw-desserts, h3 h5 {
+/*.qaw-desserts, h3 h5 {
 
 	
-}
+}*/
 
 footer p {
 	position: relative;
