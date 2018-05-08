@@ -77,7 +77,7 @@
 			  <div style="margin-left: 9%; letter-spacing: 8px;" class="collapse navbar-collapse" 			id="navbarSupportedContent">
 			    	<ul  class="navbar-nav mr-auto">
 					      <li class="nav-item active">
-					        <a href="#apps-menu-text-box" style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayAppsMenu();">APPETIZERS <span class="sr-only">(current)</span></a> <!--onclick="openpopupapp()"-->
+					        <a href="#apps-container" style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayAppsContainer();">APPETIZERS <span class="sr-only">(current)</span></a> <!--onclick="openpopupapp()"-->
 
 					        <!--<a style="color: #fff;" onclick="openpopup()">Appetizers</a>-->
 					      </li>
@@ -87,7 +87,7 @@
 					          ENTREES
 					        </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					      <a href="#entrees-menu-text-box" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayEntreesMenu();" >WEEK ONE</a> 				<!--onclick="openpopupent1()"-->
+					      <a href="#entrees-container" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayEntreesContainerweek1();" >WEEK ONE</a>
 					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent2()">WEEK TWO</a>
 					          <!--<div class="dropdown-divider"></div>-->
 					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent3()">WEEK THREE</a>
@@ -212,15 +212,15 @@
 						<!--Appetizers Menu Items-->
 
 						
-							<div class="menu-background" >
-								<h3><button onclick="change();">Shrimp & Chips...........$11</button></h3>
+							<div class="menu-background menu-item-name menu-item-description"  >
+								<h3><p onclick="appetizersItem1();">1. Shrimp & Chips...........$11</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 						
 						
-								<h3>Spring Rolls..................$9</h3>
+								<h3><p onclick="appetizersItem2();">2. Tomatoe Pie $6</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 								
-								<h3>Tomatoe Pie $6</h3>
+								<h3><p onclick="appetizersItem3();">3. Spring Rolls..................$9</p></h3>
 								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 
 								<h3>Shrimp & Chips $11</h3>
@@ -245,10 +245,10 @@
 							</div>
 				</div>
 							<div class="col-sm-8">
-											<div id="xbox">&times</div>
-											<img id="bikerImage" src="../origin/images/biker.jpeg">
-									
+											<button id="xbox" onclick="closePhoto();">&times</button>
+											<img id="bikerImage" src="../origin/images/biker.jpeg">	
 							</div>
+
 			</div>
 		</div>
 
@@ -256,7 +256,7 @@
 
 
 		<!-- Entrees Text Section-->
-<div id="entrees-container">
+<!--<div id="entrees-container">
 		<div id="entrees-menu-text-box"></div>
 	<div class="container-fluid" id="entrees-text">
 		<div class="row" style=";">
@@ -264,86 +264,74 @@
 				<p>Its here! Misc comments about our delicious mouth watering entrees! We will be rolling out our menu one week at a time beging with Week 1. Feel free to preview the upcoming weeks menu items!</p>
 			</div>
 		</div>
-	</div>	
+	</div>-->	
 				
 			<!-- entrees background photo -->
 
-	<div class="container-fluid" style="padding: 0; height: 400px;" >
+	<div class="container-fluid" id="entrees-container" style="padding: 0;" >
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-4">
 						<div class="over-lay"></div>
 
-						<!-- entrees button -->
-							<div class="ptext"></div>
-									<span id="button-entrees" style="font-size: 25px;">Entrees</span>
-										
-						<!--<div class="menu-item">-->
-							<div class="menu-background">
-								<h3>Pho $7</h3>
+							<div class="menu-background menu-item-name menu-item-description" >
+								<h3><p onclick="entreesItem1();">1. Sliced Pork...........$11</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
+						
+						
+								<h3><p onclick="entreesItem2();">2. Spicey Chicken Wings $6</p></h3>
+								<h5>Slow cooked and seasoned to perfection!</h5>
+								
+								<h3><p onclick="entreesItem3();">3. Steak Sandwich..................$9</p></h3>
+								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 
+								<h3>Shrimp & Chips $11</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5>
+						
+						
 								<h3>Spring Rolls $9</h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 								
-								<h3>Soup $6</h3>
-								<h5 id="entrees-desc3">Slow cooked and seasoned to perfection!</h5>
-							</div>
+								<h3>Tomatoe Pie $6</h3>
+								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 
-							<div id="carouselExampleControls" class="carousel slide" 			data-ride="carousel">
-						  		<div class="carousel-inner" style="height: 400px; position: absolute; top: -231px; width: 100vw;">
-						    		<div class="carousel-item active">
-						      			<img class="d-block w-100" src="../origin/images/entree.jpg" alt="Flan">
-						    		</div>
-
-						    		<div class="carousel-item">
-						      			<img class="d-block w-100" src="../origin/images/entree2.jpg" alt="Banh-Po">
-						    		</div>
-
-						    		<div class="carousel-item">
-						      			<img class="d-block w-100" src="../origin/images/entree3.jpg" alt="Vietnam-Flan">
-						    		</div>
-
-						    		<a style="color: black;" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    										<span style="color: black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
-    										<span style="color: black;" class="sr-only">Previous</span>
-  										</a>
-
-  										<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-    									<span class="sr-only">Next</span>
-  										</a>
-
-  									<div id="carouselExampleIndicators" class="					carousel slide carousel" style="height: 400px	" data-ride="carousel">
-										<ol class="carousel-indicators">
-										    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-										    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-										    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-										 </ol>
-						    		</div>
-								</div>
+								<h3>Shrimp & Chips $11</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5>
+						
+						
+								<h3>Spring Rolls $9</h3>
+								<h5>Slow cooked and seasoned to perfection!</h5>
+								
+								<h3>Tomatoe Pie $6</h3>
+								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 							</div>
 				</div>
+							<div class="col-sm-8">
+								<button id="xbox" onclick="openVietnamTemplePhoto();">&times</button>
+								<img id="vietnam-temple" src="../origin/images/vietnam-temple.jpg">	
+							</div>
 			</div>
 		</div>
-</div>
+
+							
+				
 							
 
 	<!-- Drinks Section Text -->
 
-<div id="drinks-container">
+<!--<div id="drinks-container">
 	<div class="container-fluid" id="drinks-text">
 		<div class="row" style=";">
 			<div class="col-md-12" >
 				<p>Cool tropical drinks! Misc comments about our thirst quenching drinks! We will be rolling out our menu one week at a time beging with Week 1. Feel free to preview the upcoming weeks menu items!</p>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	
 
 
 			<!-- Drinks background photo -->
 
-		<div class="container-fluid" style="padding-left: 0; height: 400px;" >
+		<div class="container-fluid" id="drinks-container" style="padding-left: 0; height: 400px;" >
 			<div class="row">
 				<div class="col-md-12">
 					<!--<div class="pimg3">-->
@@ -488,34 +476,57 @@
 
 		<script>
 
-			function change(){
- 	document.getElementById("bikerImage").src="apps.jpg"
- }
+
+			/* change from main appetizers photo "biker.jpeg" to individual appetizers item photo */
+
+				function appetizersItem1(){
+ 			document.getElementById("bikerImage").src="apps.jpg";
+ 			}
+
+				function appetizersItem2(){
+ 			document.getElementById("bikerImage").src="../origin/images/apps2.jpg";
+ 			}
+
+ 				function appetizersItem3(){
+ 			document.getElementById("bikerImage").src="../origin/images/apps3.jpg";
+ 			}
+
+ 			/* change photo back to appetizers main photo "biker.jpeg" */
+
+ 				function closePhoto() {
+ 			document.getElementById("bikerImage").src="../origin/images/biker.jpeg";
+ 		}
+
+ 			/* display appetizers container when appetizer navbar is clicked */
+ 		function displayAppsContainer() {
+ 			document.getElementById("apps-container").style.display = "block";
+ 		}
+
+ 			/* display entrees container when entrees week one navbar is clicked */
+ 		
+ 				function displayEntreesContainerweek1() {
+ 			document.getElementById("entrees-container").style.display = "block";
+ 		}
+
+ 			/* change from main entrees photo "vietnam-temple.jpg" to individual entrees item photo */
+				
+				function entreesItem1(){
+ 			document.getElementById("vietnam-temple").src="../origin/images/entreesItem1.jpg";
+ 			}
+
+				function entreesItem2(){
+ 			document.getElementById("vietnam-temple").src="../origin/images/entreesItem2.jpg";
+ 			}
+
+ 				function entreesItem3(){
+ 			document.getElementById("vietnam-temple").src="../origin/images/entreesItem3.jpg";
+ 			}
 
 
-/*					 function change(){
- var image = document.getElementById('bikerImage');
- if(bikerImage=='biker.jpeg'){
- image.src='food.jpg';
- }
- else{
- image.src='biker.jpeg';
- }
- }*/
+ 				function openVietnamTemplePhoto() {
+ 			document.getElementById("vietnam-temple").src="../origin/images/vietnam-temple.jpg";
+ 		}
 
-						/*var image =  document.getElementById("bikerImage");
-
-            function changeImageApps()
-            {
-                if (image.getAttribute('src') == "biker.jpeg")
-                {
-                    image.src = "apps.jpg";
-                }
-                else
-                {
-                    image.src = "biker.jpeg";
-                }
-            }*/
 		</script>
 
 
