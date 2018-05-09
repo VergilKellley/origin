@@ -21,15 +21,15 @@
 
 
 /* header photo */
-.header-photo {
+/*.header-photo {
 	position: relative;
-	background-image: url('../images/food.jpg');
-	background-size: cover;
+	background-image: url('../images/man-sitting.jpeg');
+	background-size: 1350px 640px;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 	height: 640px;
 	background-attachment: fixed;
-}
+}*/
 
 .container-fluid.header h2 {
 
@@ -42,14 +42,17 @@
 .container-fluid.header p {
 	position: relative;
 	font-size: 30px;
-	margin-left: 41%;
-	margin-top: 2%;
+	/*margin-left: 41%;*/
+	/*margin-top: 2%;*/
+	top: 48%;
+	left: 60%;
 	width: 15%;
 	padding: 10px;
 	color: #fff;
     font-weight: 300;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.5);
 	border: #fff solid 1px;
+	border-radius: 15px;
 }
 
 h6 span {
@@ -220,7 +223,7 @@ h4 {
 
 .pimg1 {
 	position: relative;
-	background-image: url('../images/food.jpg');
+	background-image: url('../images/logo-no-bg-2.png');
 	height:640px;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -387,8 +390,6 @@ img {
 	color: blue;
 	font-size: 25px;
 	z-index: 10;
-	transition-duration: 5s;
-	-webkit-duration: width 2s;
 }
 
 .menu-background, h3 h5 {
