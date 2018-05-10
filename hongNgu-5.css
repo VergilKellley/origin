@@ -8,28 +8,23 @@
 	position: relative;
 	height: 640px;
 	width: 100vw;
-	/*margin-left: 50px;*/
 	padding: 0;
 	margin: 0;
 	/*border-bottom: 3px solid rgba(218, 37, 29, 1); /* red */
 	/*border-top: 3px solid rgba(255, 255, 0, 1); /* yellow */
 }
 
-/*.container-fluid{
-	display: block;
-}*/
-
 
 /* header photo */
-/*.header-photo {
+.header-photo {
 	position: relative;
-	background-image: url('../images/man-sitting.jpeg');
+	background-image: url('../images/mcchai.jpg');
 	background-size: 1350px 640px;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 640px;
 	background-attachment: fixed;
-}*/
+}
 
 .container-fluid.header h2 {
 
@@ -39,14 +34,15 @@
 	color: #fff;
 }
 
-.container-fluid.header p {
-	position: relative;
+.container-fluid#header p {
+	position: absolute;
 	font-size: 30px;
 	/*margin-left: 41%;*/
 	/*margin-top: 2%;*/
-	top: 48%;
-	left: 60%;
-	width: 15%;
+	top: 38%;
+	text-align: center;
+	/*left: 35%;
+	width: 15%;*/
 	padding: 10px;
 	color: #fff;
     font-weight: 300;
@@ -55,7 +51,14 @@
 	border-radius: 15px;
 }
 
-h6 span {
+/* video in header */
+video {
+	border-radius: 15px;
+	opacity: 0.5;
+}
+
+/* text for mcchai photo */
+/*h6 span {
 	position: absolute;
 	font-style: italic;
 	border: #fff solid 1px;
@@ -64,7 +67,7 @@ h6 span {
 	margin-left: 30px;
 	bottom: 30px;
 	padding: 3px;
-}
+}*/
 
 /* nav bar */
 
@@ -140,38 +143,22 @@ nav{
 		}
 
 
-/* appetizer button */
-/*#app-text {
-	font-size: 20px;
-
-	/*background-color: rgba(218, 37, 29, 1); /* red */
-
-	/*background-color: #000; /* black */
-	/*color: #fff;
-	/*color: #fff;*/
-	/*position: relative;
-	padding: 5px;
-	text-align: justify;
-	bottom: 0px;
-	z-index: 7;
-}*/
-
 /* entrees button */
 
 #entrees-text {
-	font-size: 20px;
+	/*font-size: 20px;
 	/*background-color: rgba(255, 255, 0, 1); /* yellow */
-	background-color: #000;
+	/*background-color: #000;
 	/*color: #000;*/
-	color: #fff;
+	/*color: #fff;
 	position:relative;
 	padding: 7px;
 	text-align: justify;
 	bottom: 2px;
-	z-index: 5;
+	z-index: 5;*/
 }
 
-#drinks-text {
+/*#drinks-text {
 	position: relative;
 	font-size: 20px;
 	background-color: #000;
@@ -180,9 +167,9 @@ nav{
 	text-align: justify;
 	z-index: 7;
 	top: -2px;
-}
+}*/
 
-#desserts-text {
+/*#desserts-text {
 	position: absolute;
 	font-size: 20px;
 	background-color: #000;
@@ -192,34 +179,37 @@ nav{
 	text-align: justify;
 	top: -2px;
 	z-index: 7;
-}
+}*/
 
-h4 {
+/*h4 {
 	text-align: center;
 	padding: 10px;
-}
+}*/
 
 /* appetizers container */
 #apps-container {
-	position: absolute;
+	position: relative;
 	height: 640px;
 	background-color: blue;
 	display: none;
 }
 
+/* entrees container */
 #entrees-container {
-
+	position: relative;
 	height: 640px;
 	background-color: #fff;
 	display: none;
 	background-color: black;
 }
 
+/* drinks container */
 #drinks-container {
 	display: none;
 	background-color: black;
 }
 
+/* desserts container */
 #dessert-container {
 	display: none;
 	background-color: black;
@@ -285,22 +275,6 @@ h4 {
 	
 }
 
-
-/* apps button */
-/*#button-apps {
-	position: absolute;
-	z-index: 2;
-	font-size: 55px;
-	background-color: rgba(0,0,0,0.5);
-	color: green;
-	top: 13%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 5px;
-	opacity: .5;
-	border-radius: 10%;
-}*/
-
 /* entrees button */
 #button-entrees {
 	position: absolute;
@@ -350,33 +324,39 @@ h4 {
 .menu-background {
 	position: relative;
 	top: 50%;
-	left: 17%;
+	left: 19.5%;
 	transform: translate(-50%, -50%);
 	padding-bottom:5px;
 	padding-top: 15px;
-	width: 450px;
+	width: 510px;
 	height: 640px;
-	color:blue;
 	text-align: left;
 	background-color: rgba(0,0,0,0.3);
 	font-size: 1.3rem;
 	border-radius: 10%;
 	z-index: 7;
-	overflow: scroll;
+	overflow-y: auto;
 	overflow-x: hidden;
-
+	direction: rtl; /* move scroll bar to left side of menu items */
 }
 
+/* name of menu items */
 .menu-item-name p {
+	position: relative;
 	cursor: pointer;
 	color: #fff;
-	border: #fff;
+	margin-left:  20px;
+	direction: ltr; /* move name text back to left to right */
 
 }
 
+/* description of menu items */
 .menu-item-description h5{
+	position: relative;
 	font-style: italic;
-	color: #000;
+	color: #fff;
+	margin-left: 20px;
+	direction: ltr; /* move description text back to left to right*/
 }
 /* image size for appetizers, entrees, drinks and dessert menus images */
 img {
@@ -386,8 +366,18 @@ img {
 
 }
 
+/* appetizers main bg photo */
 #bikerImage {
-	background-image: url("../images/biker.jpeg");
+
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 640px;
+}
+
+/* entrees main bg photo */
+#vietnam-temple {
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -432,14 +422,9 @@ h3 {
 
 }
 
-/*.qaw-desserts, h3 h5 {
-
-	
-}*/
-
 footer p {
 	position: relative;
-	width: 100%;
+	width: 50%;
 	height: 80px;
 	
 	font-size: 20px;
@@ -450,7 +435,7 @@ footer p {
 
 }
 
-@keyframes modalopen{
+/*@keyframes modalopen{
 	from{opacity: 0}
 	to{opacity: 1}
 }*/
