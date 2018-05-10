@@ -29,7 +29,6 @@
 
 		nav, a:hover {
 			color: red;
-			/*background-color: rgba(0,0,0,.7);*/
 			text-decoration: none;
 		}
 
@@ -39,87 +38,93 @@
 
 		nav, .dropdown-menu a:hover {
 			color: red;
-			/*background-color: rgba(0,0,0,.7);*/
 		}
 
-		/* button */
-		/*button {
-			color: gold;
-			font-size: 20px;
-			background-color:transparent;
-			text-decoration: none;
-		
-		}*/
-
-	
-
-		/*button:hover {
-			color: green;
-		}*/
 	</style>
 
 <body style="overflow-x: hidden;">
 
-	<div class="container-fluid header" id="header" style="background-color: red;" >
-		<div class="header-photo" style="height: 640px;">
-	
+	<!-- header photo -->
 
-			
+	<div class="container-fluid header-photo" id="header" >
 
-				<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+		<!-- navagation -->
 
+		<div class="row">
+			<div class="col-sm-12">
 				<nav class="navbar navbar-expand-md" style=" padding: 20px;">
 			 <!-- <a class="navbar-brand" href="#">Navbar</a>-->
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
 				  </button>
 
-			  <div style="margin-left: 9%; letter-spacing: 8px;" class="collapse navbar-collapse" 			id="navbarSupportedContent">
-			    	<ul  class="navbar-nav mr-auto">
-					      <li class="nav-item active">
-					        <a href="#apps-container" style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayAppsContainer();">APPETIZERS <span class="sr-only">(current)</span></a> <!--onclick="openpopupapp()"-->
-
-					        <!--<a style="color: #fff;" onclick="openpopup()">Appetizers</a>-->
-					      </li>
+			  			<div style="margin-left: 9%; letter-spacing: 8px;" class="collapse navbar-collapse" 			id="navbarSupportedContent">
+			    			<ul  class="navbar-nav mr-auto">
+					      		<li class="nav-item active">
+					        		<a href="#apps-container" style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayAppsContainer();">APPETIZERS <span class="sr-only">(current)</span></a>
+					      		</li>
 					      
-					      <li class="nav-item dropdown">
-					        <a style=" padding-right: 30px; color: #fff;" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					          ENTREES
-					        </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="z-index: 5;">
-					      <a href="#entrees-container" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayEntreesContainerweek1();" >WEEK ONE</a>
-					      <a style="color: #fff; background-color: rgba(0,0,0,.7); z-index: 5;" class="dropdown-item" onclick="openpopupent2()">WEEK TWO</a>
-					          <!--<div class="dropdown-divider"></div>-->
-					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent3()">WEEK THREE</a>
-					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent4()">WEEK FOUR</a>
-					</div>
-					      </li>
-					      <li class="nav-item">
-					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayDrinksMenu();">DRINKS</a>
-					      </li>
-					      <li class="nav-item">
-					        <a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayDessertMenu();">DESSERTS</a>
-					      </li>
-					      <li class="nav-item dropdown">
-					        <a style=" padding-right: 30px; color: #fff;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					          CONTACT US
-					        </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayAddress();">ADDRESS</a>
-					      <a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayMap();">MAP</a>
-					</div>
-					      </li>
-					    </ul>
-			  </div>
-			</nav>
+					      		<li class="nav-item dropdown">
+					        		<a style=" padding-right: 30px; color: #fff;" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					         		ENTREES
+					        		</a>
 
-			<img id="logo" src="../origin/images/logo-no-bg.png" style="height: 550px; width: 350px; position: absolute; background-repeat: no-repeat; background-attachment: fixed; left: 35%; background-color: transparent; z-index: 1;">
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="z-index: 5;">
+					      			<a href="#entrees-container" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayEntreesContainerweek1();" >WEEK ONE</a>
+					      			<a style="color: #fff; background-color: rgba(0,0,0,.7); z-index: 5;" class="dropdown-item" onclick="openpopupent2()">WEEK TWO</a>
+
+					          		<!--<div class="dropdown-divider"></div>-->
+
+					      			<a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent3()">WEEK THREE</a>
+					      			<a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="openpopupent4()">WEEK FOUR</a>
+								</div>
+
+					      		</li>
+
+					      		<li class="nav-item">
+					        		<a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayDrinksMenu();">DRINKS</a>
+					      		</li>
+
+					      		<li class="nav-item">
+					        		<a style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayDessertMenu();">DESSERTS</a>
+					      		</li>
+
+					      		<li class="nav-item dropdown">
+					        		<a style=" padding-right: 30px; color: #fff;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          		CONTACT US
+					        		</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					      			<a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayAddress();">ADDRESS</a>
+					      			<a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayMap();">MAP</a>
+							</div>
+					      		</li>
+					    	</ul>
+			  			</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- hong ngu logo -->
+
+		<div class="container-fluid"></div>
+			<div class="row">
+				<div class="col-xs-12 col-lg-3">
+					<img id="logo" src="../origin/images/logo-no-bg.png" style="height: 550px; width: 350px; position: absolute; background-repeat: no-repeat; background-attachment: fixed; left: 6%; background-color: transparent; z-index: 1;">
+				</div>
 			
-			<!-- Hong Ngu name and phone number -->
+					<!-- Hong Ngu name and phone number -->
+					<!--<h2>Hồng Ngự</h2>-->
+				<div class="col-xs-12 col-lg-2">
+					<p>312-555-5555</p>
+				</div>
 
-			<!--<h2>Hồng Ngự</h2>-->
-			<p>312-555-5555</p>
+				<!-- video -->
 
+			<div class="col-xs-12 col-lg-7 embed-responsive embed-responsive-16by9"">
+				<video width="75%" height="75%" autoplay loop muted="">
+  					<source src="../origin/images/Leo 002.mp4" type="video/mp4">
+				</video>
+			</div>
 
 				<!-- Text for Mu Cang Chai photo -->
 			<!--<h6><span class="italic" style="color: #fff;">Mu Cang Chai Vietnam</span></h6>-->
@@ -127,214 +132,108 @@
 		</div>
 	</div>
 
-
-<!--Appetizers Shrimp and Chips Modal -->
-
-<!--<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content"> 
-      <div class="modal-header">
-      	<img class="d-block w-100" src="../origin/images/apps.jpg" alt="Flan">
-       	<h5 class="modal-title" id="exampleModalLongTitle"></h5>-->
-
-        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>-->
-      <!--</div>
-      <div class="modal-body">
-        <span style="font-style: italic;">Shrimp & Chips: Delisious spicey or mild, slow cooked and seasoned to perfection!...$11</span>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-      <!--</div>
-    </div>
-  </div>
-</div>-->
-
-		<!-- Appetizers Spring Rolls Modal -->
-
-
-
-<!-- Modal -->
-<!--<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      	<img class="d-block w-100" src="../origin/images/apps3.jpg" alt="appetizers">
-        <p class="modal-title" id="exampleModalLongTitle"></p>-->
-        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>-->
-      <!--</div>
-      <div class="modal-body">
-       <span style="font-style: italic;"><span style="color: red"> Special:</span> Spring Rolls, available with chicken, pork or beef ...$9</span>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-      <!--</div>
-    </div>
-  </div>
-</div>-->
-
-
-	<!-- Appetizers Tomatoe Pie modal -->
-
-	<!--<div class="modal fade" id="exampleModalTomatoe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      	<img class="d-block w-100" src="../origin/images/apps2.jpg" alt="appetizers">
-        <p class="modal-title" id="exampleModalLongTitle"></p>-->
-        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>-->
-      <!--</div>
-      <div class="modal-body">
-       <span style="font-style: italic;">Tomatoe Pie: Spicey eggs tomatoes and asparagus...$6 </span>
-      </div>
-      <div class="modal-footer">-->
-        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-      <!--</div>
-    </div>
-  </div>
-</div>-->
-
-
-	
-
 	<!-- Appetizers background photo -->
 	
-		<div class="container-fluid" id="apps-container">
-			<div class="row" style="height: 640px;">
-				<div class="col-sm-12" style="height: 640px;">
+		<div class="container-fluid" id="apps-container" style="padding: 0px;">
+			<div class="row">
+				<div class="col-lg-12">
 						
-						<!--Appetizers Menu Items-->
+						<!--Appetizers bg photo-->
 
-							<div id="bikerImage" style="width: 100%;"> </div>
+							<img id="bikerImage" src="../origin/images/biker.jpeg">
+
+							<!-- appetizers menu items -->
+
 							<div class="menu-background menu-item-name menu-item-description" style="z-index: 99; position: absolute;">
 								<h3><p onclick="appetizersItem1();">1. Shrimp & Chips...........$11</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 						
-						
-								<h3><p onclick="appetizersItem2();">2. Tomatoe Pie $6</p></h3>
+								<h3><p onclick="appetizersItem2();">2. Tomatoe Pie..................$6</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 								
 								<h3><p onclick="appetizersItem3();">3. Spring Rolls..................$9</p></h3>
+								<h5>Lightly seasoned tomatoes, eggs and asparagus!</h5>
+
+								<h3><p>4. Shrimp & Chips $11</p></h3>
+								<h5>Slow cooked and seasoned to perfection</h5>
+						
+						
+								<h3><p>5. Spring Rolls $9</p></h3>
+								<h5>Slow cooked and seasoned to perfection7!</h5>
+								
+								<h3><p>6. Tomatoe Pie $6</p></h3>
 								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 
-								<h3>Shrimp & Chips $11</h3>
+								<h3><p>Shrimp & Chips $11</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 						
 						
-								<h3>Spring Rolls $9</h3>
-								<h5>Slow cooked and seasoned to perfection!</h5>
-								
-								<h3>Tomatoe Pie $6</h3>
-								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
-
-								<h3>Shrimp & Chips $11</h3>
-								<h5>Slow cooked and seasoned to perfection!</h5>
-						
-						
-								<h3>Spring Rolls $9</h3>
+								<h3><p>Spring Rolls $9</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 								
-								<h3>Tomatoe Pie $6</h3>
+								<h3><p>Tomatoe Pie $6</p></h3>
 								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 							</div>
 								
+						<!-- button (x) to close menu item photo and display appetizers main bg photo -->
 											<button id="xbox" onclick="closePhoto();">&times</button>
-											<!--<img id="bikerImage" src="../origin/images/biker.jpeg">-->
-											
-
 					</div>	
 				</div>
 			</div>
+			
 	
-
-	
-
-
-		<!-- Entrees Text Section-->
-<!--<div id="entrees-container">
-		<div id="entrees-menu-text-box"></div>
-	<div class="container-fluid" id="entrees-text">
-		<div class="row" style=";">
-			<div class="col-md-12" >
-				<p>Its here! Misc comments about our delicious mouth watering entrees! We will be rolling out our menu one week at a time beging with Week 1. Feel free to preview the upcoming weeks menu items!</p>
-			</div>
-		</div>
-	</div>-->	
-				
-			<!-- entrees background photo -->
+			<!-- entrees menu section -->
 
 	<div class="container-fluid" id="entrees-container" style="padding: 0;" >
 			<div class="row">
-				<div class="col-md-4">
-						<div class="over-lay"></div>
+				<div class="col-md-12">
 
-							<div class="menu-background menu-item-name menu-item-description" >
+							<!-- entrees bg photo -->
+
+							<img id="vietnam-temple" src="../origin/images/vietnam-temple.jpg">	
+
+							<!-- entrees menu items-->
+
+							<div class="menu-background menu-item-name menu-item-description" style="z-index: 99; position: absolute;">
 								<h3><p onclick="entreesItem1();">1. Sliced Pork...........$11</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
-						
-						
+
 								<h3><p onclick="entreesItem2();">2. Spicey Chicken Wings $6</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 								
 								<h3><p onclick="entreesItem3();">3. Steak Sandwich..................$9</p></h3>
 								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 
-								<h3>Shrimp & Chips $11</h3>
+								<h3><p>Shrimp & Chips $11</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 						
-						
-								<h3>Spring Rolls $9</h3>
+								<h3><p>Spring Rolls $9</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 								
-								<h3>Tomatoe Pie $6</h3>
+								<h3><p>Tomatoe Pie $6</p></h3>
 								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 
-								<h3>Shrimp & Chips $11</h3>
+								<h3><p>Shrimp & Chips $11</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 						
 						
-								<h3>Spring Rolls $9</h3>
+								<h3><p>Spring Rolls $9</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 								
-								<h3>Tomatoe Pie $6</h3>
+								<h3><p>Tomatoe Pie $6</p></h3>
 								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 							</div>
-				</div>
-							<div class="col-sm-8">
+								
+						<!-- button (x) to close menu item photo and display entrees main bg photo -->
+
 								<button id="xbox" onclick="openVietnamTemplePhoto();">&times</button>
-								<img id="vietnam-temple" src="../origin/images/vietnam-temple.jpg">	
-							</div>
+								
 			</div>
 		</div>
-
-							
-				
-							
-
-	<!-- Drinks Section Text -->
-
-<!--<div id="drinks-container">
-	<div class="container-fluid" id="drinks-text">
-		<div class="row" style=";">
-			<div class="col-md-12" >
-				<p>Cool tropical drinks! Misc comments about our thirst quenching drinks! We will be rolling out our menu one week at a time beging with Week 1. Feel free to preview the upcoming weeks menu items!</p>
-			</div>
-		</div>
-	</div>-->
-	
-
-
+	</div>
 			<!-- Drinks background photo -->
 
-		<div class="container-fluid" id="drinks-container" style="padding-left: 0; height: 400px;" >
+		<div class="container-fluid" id="drinks-container" style="padding-left: 0;" >
 			<div class="row">
 				<div class="col-md-12">
 					<!--<div class="pimg3">-->
@@ -531,6 +430,7 @@
  				function openVietnamTemplePhoto() {
  			document.getElementById("vietnam-temple").src="../origin/images/vietnam-temple.jpg";
  		}
+
 
 		</script>
 
