@@ -60,7 +60,7 @@
 
 <body style="overflow-x: hidden;">
 
-	<div class="container-fluid header" id="header" style="background-color: #fff;" >
+	<div class="container-fluid header" id="header" style="background-color: red;" >
 		<div class="header-photo" style="height: 640px;">
 	
 
@@ -208,13 +208,13 @@
 	<!-- Appetizers background photo -->
 	
 		<div class="container-fluid" id="apps-container">
-			<div class="row">
-				<div class="col-sm-4">
+			<div class="row" style="height: 640px;">
+				<div class="col-sm-12" style="height: 640px;">
 						
 						<!--Appetizers Menu Items-->
 
-						
-							<div class="menu-background menu-item-name menu-item-description"  >
+							<div id="bikerImage" style="width: 100%;"> </div>
+							<div class="menu-background menu-item-name menu-item-description" style="z-index: 99; position: absolute;">
 								<h3><p onclick="appetizersItem1();">1. Shrimp & Chips...........$11</p></h3>
 								<h5>Slow cooked and seasoned to perfection!</h5>
 						
@@ -245,14 +245,15 @@
 								<h3>Tomatoe Pie $6</h3>
 								<h5>Lightly seasoned tomatoes, eggs and asparagus</h5>
 							</div>
-				</div>
-							<div class="col-sm-8">
+								
 											<button id="xbox" onclick="closePhoto();">&times</button>
-											<img id="bikerImage" src="../origin/images/biker.jpeg">	
-							</div>
+											<!--<img id="bikerImage" src="../origin/images/biker.jpeg">-->
+											
 
+					</div>	
+				</div>
 			</div>
-		</div>
+	
 
 	
 
@@ -500,7 +501,8 @@
  		}
 
  			/* display appetizers container when appetizer navbar is clicked */
- 		function displayAppsContainer() {
+ 			
+ 				function displayAppsContainer() {
  			document.getElementById("apps-container").style.display = "block";
  		}
 
@@ -524,6 +526,7 @@
  			document.getElementById("vietnam-temple").src="../origin/images/entreesItem3.jpg";
  			}
 
+ 				/* change photo back to entrees main photo "vietnam-temple.jpg" */
 
  				function openVietnamTemplePhoto() {
  			document.getElementById("vietnam-temple").src="../origin/images/vietnam-temple.jpg";
