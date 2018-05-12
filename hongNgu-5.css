@@ -142,50 +142,6 @@ nav{
 			display: block;
 		}
 
-
-/* entrees button */
-
-#entrees-text {
-	/*font-size: 20px;
-	/*background-color: rgba(255, 255, 0, 1); /* yellow */
-	/*background-color: #000;
-	/*color: #000;*/
-	/*color: #fff;
-	position:relative;
-	padding: 7px;
-	text-align: justify;
-	bottom: 2px;
-	z-index: 5;*/
-}
-
-/*#drinks-text {
-	position: relative;
-	font-size: 20px;
-	background-color: #000;
-	color: #fff;
-	padding: 7px;
-	text-align: justify;
-	z-index: 7;
-	top: -2px;
-}*/
-
-/*#desserts-text {
-	position: absolute;
-	font-size: 20px;
-	background-color: #000;
-	color: #fff;
-	position: relative;
-	padding-top: 5px;
-	text-align: justify;
-	top: -2px;
-	z-index: 7;
-}*/
-
-/*h4 {
-	text-align: center;
-	padding: 10px;
-}*/
-
 /* appetizers container */
 #apps-container {
 	position: relative;
@@ -205,6 +161,9 @@ nav{
 
 /* drinks container */
 #drinks-container {
+	position: relative;
+	height: 640px;
+	background-color: #fff;
 	display: none;
 	background-color: black;
 }
