@@ -32,18 +32,17 @@
 			text-decoration: none;
 		}
 
-		a:hover {
+		/*a:hover {
 			color: green;
 		}
 
 		nav, .dropdown-menu a:hover {
 			color: red;
-		}
+		}*/
 
 	</style>
 
 <body style="overflow-x: hidden;">
-
 	<!-- header photo -->
 
 	<div class="container-fluid header-photo" id="header">
@@ -86,7 +85,7 @@
 					      		</li>
 
 					      		<li class="nav-item">
-					        		<a href="#dessert-container" style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayDessertContainer();">DESSERTS</a>
+					        		<a href="#desserts-container" style=" padding-right: 30px; color: #fff;" class="nav-link" onclick="displayDessertsContainer();">DESSERTS</a>
 					      		</li>
 
 					      		<li class="nav-item dropdown">
@@ -109,7 +108,7 @@
 		<div class="container-fluid"></div>
 			<div class="row">
 				<div class="col-xs-12 col-lg-3">
-					<img id="logo" src="../origin/images/logo-no-bg.png" style="height: 550px; width: 350px; position: absolute; background-repeat: no-repeat; background-attachment: fixed; left: 6%; background-color: transparent; z-index: 1;">
+					<img id="logo" src="../origin/images/logo-no-bg.png" style="height: 530px; width: 350px; position: absolute; background-repeat: no-repeat; background-attachment: fixed; left: 6%; background-color: transparent; z-index: 1;">
 				</div>
 			
 					<!-- Hong Ngu name and phone number -->
@@ -131,7 +130,6 @@
 		
 		</div>
 	</div>
-
 	<!-- Appetizers background photo -->
 	
 		<div class="container-fluid" id="apps-container" style="padding: 0px;">
@@ -176,7 +174,7 @@
 							</div>
 								
 						<!-- button (x) to close menu item photo and display appetizers main bg photo -->
-											<button id="xbox" onclick="closePhoto();">&times</button>
+											<button id="xbox" onclick="openBikerPhoto();">&times</button>
 					</div>	
 				</div>
 			</div>
@@ -283,7 +281,7 @@
 
 	<!-- Desserts Text Section -->
 
-	<div class="container-fluid" id="dessert-container" style="padding-left: 0;" >
+	<div class="container-fluid" id="desserts-container" style="padding-left: 0;" >
 			<div class="row">
 				<div class="col-md-12">
 
@@ -361,7 +359,7 @@
 
  			/* change photo back to appetizers main photo "biker.jpeg" */
 
- 				function closePhoto() {
+ 				function openBikerPhoto() {
  			document.getElementById("bikerImage").src="../origin/images/biker.jpeg";
 
  				}
@@ -375,11 +373,7 @@
 
  			/****************** Entrees Section ************************/
 
- 			/* display entrees container when entrees week one navbar is clicked */
- 		
- 				function displayEntreesContainerweek1() {
- 			document.getElementById("entrees-container").style.display = "block";
- 		}
+ 			
 
  			/* change from main entrees photo "vietnam-temple.jpg" to individual entrees item photo */
 				
@@ -399,6 +393,12 @@
 
  				function openVietnamTemplePhoto() {
  			document.getElementById("vietnam-temple").src="../origin/images/vietnam-temple.jpg";
+ 		}
+
+ 		/* display entrees container when entrees week one navbar is clicked */
+ 		
+ 				function displayEntreesContainerweek1() {
+ 			document.getElementById("entrees-container").style.display = "block";
  		}
 
  		/********************* Drinks Section *************************/
@@ -427,8 +427,8 @@
 
  			/* display drinks container when drinks navbar is clicked */
  			
- 				function displayDessertContainer() {
- 			document.getElementById("dessert-container").style.display = "block";
+ 				function displayDrinksContainer() {
+ 			document.getElementById("drinks-container").style.display = "block";
  		}
 
  		/********************* Desserts Section *************************/
@@ -451,6 +451,12 @@
 
  				function openDessertPhoto() {
  			document.getElementById("statue").src="../origin/images/statue.jpeg";
+ 		}
+
+ 		/* display desserts container when desserts navbar is clicked */
+ 			
+ 				function displayDessertsContainer() {
+ 			document.getElementById("desserts-container").style.display = "block";
  		}
 
 		</script>
