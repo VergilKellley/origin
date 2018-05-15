@@ -10,6 +10,7 @@
 	width: 100vw;
 	padding: 0;
 	margin: 0;
+	top: 0px;
 	/*border-bottom: 3px solid rgba(218, 37, 29, 1); /* red */
 	/*border-top: 3px solid rgba(255, 255, 0, 1); /* yellow */
 }
@@ -146,7 +147,6 @@ nav{
 #apps-container {
 	position: relative;
 	height: 640px;
-	background-color: blue;
 	display: none;
 }
 
@@ -154,27 +154,21 @@ nav{
 #entrees-container {
 	position: relative;
 	height: 640px;
-	background-color: #fff;
 	display: none;
-	background-color: black;
 }
 
 /* drinks container */
 #drinks-container {
 	position: relative;
 	height: 640px;
-	background-color: #fff;
 	display: none;
-	background-color: black;
 }
 
 /* desserts container */
-#dessert-container {
+#desserts-container {
 	position: relative;
 	height: 640px;
-	background-color: #fff;
 	display: none;
-	background-color: black;
 }
 
 .pimg1 {
