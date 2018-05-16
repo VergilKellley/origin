@@ -341,14 +341,16 @@ img {
 	height: 640px;
 }
 
+/* drinks main bg photo */
 #man-sitting {
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
+	width: 100vw;
 	height: 640px;
 }
 
+/* desserts main bg photo */
 #statue {
 	position: relative;
 	background-size: cover;
@@ -406,8 +408,3 @@ footer p {
 	padding-top: 15px;
 
 }
-
-/*@keyframes modalopen{
-	from{opacity: 0}
-	to{opacity: 1}
-}*/
