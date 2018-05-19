@@ -371,6 +371,17 @@ img {
 	z-index: 10;
 }
 
+#xbox2 {
+	position: absolute;
+	left: 90%;
+	top: 10%;
+	cursor: pointer;
+	color: blue;
+	font-size: 25px;
+	z-index: 10;
+}
+
+
 .menu-background, h3 h5 {
 	padding: 20px;
 	text-align: left;
@@ -389,7 +400,7 @@ h3 {
 	transform: translate(-50%, -50%);
 	width: 450px;
 	top: 82%;
-	border-radius: 10%;
+	border-color: red;
 	z-index: 2;
 	color:#fff;
 	font-size: 1.3rem;

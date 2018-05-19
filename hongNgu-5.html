@@ -323,7 +323,8 @@
 								
 						<!-- button (x) to close menu item photo and display drinks main bg photo -->
 
-								<button id="xbox" onclick="openDessertPhoto()" >&times</butt>
+								<button id="xbox" onclick="openDessertPhoto();" >&times</butt>
+								
 
 									<!--<button id="xbox" onclick="dessertPhotoOrDisplayNone()">&times</button>-->
 
@@ -348,7 +349,7 @@
 			/* change from main appetizers photo "biker.jpeg" to individual appetizers item photo */
 
 				function appetizersItem1(){
- 			document.getElementById("bikerImage").src="apps.jpg";
+ 			document.getElementById("bikerImage").src="../origin/images/apps.jpg";
  			}
 
 				function appetizersItem2(){
@@ -362,7 +363,12 @@
  			/* change photo back to appetizers main photo "biker.jpeg" */
 
  				function openBikerPhoto() {
- 			document.getElementById("bikerImage").src="../origin/images/biker.jpeg";
+ 			if(document.getElementById("bikerImage").src="../origin/images/biker.jpeg"){
+ 				document.getElementById("apps-container").style.display="none";
+ 			} else {
+ 				document.getElementById("apps-container").style.display="block";
+ 				document.getElementById("bikerImage").src="../origin/images/biker.jpeg";
+ 			}
 
  				}
  		
@@ -451,20 +457,9 @@
 
  			/* change photo back to dessert main photo "statue.jpeg" */
 
- 				function openDessertPhoto() {
+ 			/*	function openDessertPhoto() {
  			document.getElementById("statue").src="../origin/images/statue.jpeg";
- 		}
-
-
- 					/*var statue = document.getElementById("statue").src="../origin/images/statue.jpeg";
- 					var displayNone = document.getElementById('desserts-container').style.display="none";
- 				
- 				function dessertPhotoOrDisplayNone(){
-
- 					if ("statue" == true){
- 						document.getElementById('desserts-container').style.display="none";
- 					}
- 				}*/
+ 		}*/
 
  		/* display desserts container when desserts navbar is clicked */
  			
@@ -472,6 +467,11 @@
  			document.getElementById("desserts-container").style.display = "block";
  		}
 
+
+ 				function openDessertPhoto() {
+ 				document.getElementById('desserts-container').style.display='none';
+			}
+			
 		</script>
 
 
