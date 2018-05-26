@@ -2,7 +2,7 @@
 <html>
 <head>
 
-		<link rel="stylesheet" type="text/css" href="css/hongNgu-5.css">
+		<link rel="stylesheet" type="text/css" href="hongNgu-5.css">
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
@@ -10,7 +10,7 @@
 
 	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 		
-	<link rel="stylesheet" type="text/css" href="../origin/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
@@ -108,22 +108,22 @@
 		<div class="container-fluid"></div>
 			<div class="row">
 				<div class="col-xs-12 col-lg-3">
-					<img id="logo" src="../origin/images/logo-no-bg.png" style="height: 530px; width: 350px; position: absolute; background-repeat: no-repeat; background-attachment: fixed; left: 6%; background-color: transparent; z-index: 1;">
+					<img id="logo" src="logo-no-bg.png" style="height: 530px; width: 350px; position: absolute; background-repeat: no-repeat; background-attachment: fixed; left: 6%; background-color: transparent; z-index: 1;">
 				</div>
 			
 					<!-- Hong Ngu name and phone number -->
 					<!--<h2>Hồng Ngự</h2>-->
 				<div class="col-xs-12 col-lg-2">
-					<p>(773)555-5555</p>
+					<p>(773) 555-5555</p>
 				</div>
 
 				<!-- video -->
 
-			<div class="col-xs-12 col-lg-7 embed-responsive embed-responsive-16by9"">
+			<!--<div class="col-xs-12 col-lg-7 embed-responsive embed-responsive-16by9"">
 				<video width="75%" height="75%" autoplay loop muted="">
   					<source src="../origin/images/Leo 002.mp4" type="video/mp4">
 				</video>
-			</div>
+			</div>-->
 
 				<!-- Text for Mu Cang Chai photo -->
 			<!--<h6><span class="italic" style="color: #fff;">Mu Cang Chai Vietnam</span></h6>-->
@@ -138,7 +138,7 @@
 						
 						<!--Appetizers bg photo-->
 
-							<img id="bikerImage" src="../origin/images/biker.jpeg">
+							<img id="bikerImage" src="biker.jpeg">
 
 							<!-- appetizers menu items -->
 
@@ -188,7 +188,7 @@
 
 							<!-- entrees bg photo -->
 
-							<img id="vietnam-temple" src="../origin/images/vietnam-temple.jpg">	
+							<img id="vietnam-temple" src="vietnam-temple.jpg">	
 
 							<!-- entrees menu items-->
 
@@ -237,7 +237,7 @@
 
 							<!-- drinks bg photo -->
 
-							<img id="man-sitting" src="../origin/images/man-sitting.jpeg">	
+							<img id="man-sitting" src="man-sitting.jpeg">	
 
 							<!-- drinks menu items-->
 
@@ -287,7 +287,7 @@
 
 							<!-- desserts bg photo -->
 
-							<img id="statue" src="../origin/images/statue.jpeg">	
+							<img id="statue" src="statue.jpeg">	
 
 							<!-- desserts menu items-->
 
@@ -348,29 +348,46 @@
 
 			/* change from main appetizers photo "biker.jpeg" to individual appetizers item photo */
 
-				function appetizersItem1(){
- 			document.getElementById("bikerImage").src="../origin/images/apps.jpg";
+			function appetizersItem1(){
+ 				document.getElementById("bikerImage").src="apps.jpg";
+ 				tempvar = "appItem1";
  			}
+
+				/*function appetizersItem1(){
+ 			document.getElementById("bikerImage").src="../origin/images/apps.jpg";
+ 			}*/
 
 				function appetizersItem2(){
- 			document.getElementById("bikerImage").src="../origin/images/apps2.jpg";
+ 			document.getElementById("bikerImage").src="apps2.jpg";
  			}
 
- 				function appetizersItem3(){
+ 			/*	function appetizersItem3(){
  			document.getElementById("bikerImage").src="../origin/images/apps3.jpg";
+ 			}*/
+
+ 			function appetizersItem3(){
+ 			document.getElementById("bikerImage").src="apps3.jpg";
  			}
 
  			/* change photo back to appetizers main photo "biker.jpeg" */
 
- 				function openBikerPhoto() {
- 			if(document.getElementById("bikerImage").src="../origin/images/biker.jpeg"){
- 				document.getElementById("apps-container").style.display="none";
- 			} else {
- 				document.getElementById("apps-container").style.display="block";
- 				document.getElementById("bikerImage").src="../origin/images/biker.jpeg";
- 			}
+ 			function openBikerPhoto() {
+ 				
+ 				document.getElementById("bikerImage").src="biker.jpeg";
 
- 				}
+ 				if (tempvar != "default") { 	
+ 					tempvar = "default";
+ 					//window.alert("tempvar is not set to default" + tempvar);				
+ 					
+ 					//window.location = "../origin/hongNgu-5.html#apps-container";
+ 					window.location = "hongNgu-5.html#apps-container";
+ 				} else {				
+ 					//window.alert("current value: " + tempvar);
+ 					//window.location = "../origin/hongNgu-5.html";
+ 					window.location = "hongNgu-5.html";
+				} 
+
+ 			}
  		
 
  			/* display appetizers container when appetizer navbar is clicked */
@@ -386,21 +403,21 @@
  			/* change from main entrees photo "vietnam-temple.jpg" to individual entrees item photo */
 				
 				function entreesItem1(){
- 			document.getElementById("vietnam-temple").src="../origin/images/entreesItem1.jpg";
+ 			document.getElementById("vietnam-temple").src="entreesItem1.jpg";
  			}
 
 				function entreesItem2(){
- 			document.getElementById("vietnam-temple").src="../origin/images/entreesItem2.jpg";
+ 			document.getElementById("vietnam-temple").src="entreesItem2.jpg";
  			}
 
  				function entreesItem3(){
- 			document.getElementById("vietnam-temple").src="../origin/images/entreesItem3.jpg";
+ 			document.getElementById("vietnam-temple").src="entreesItem3.jpg";
  			}
 
  				/* change photo back to entrees main photo "vietnam-temple.jpg" */
 
  				function openVietnamTemplePhoto() {
- 			document.getElementById("vietnam-temple").src="../origin/images/vietnam-temple.jpg";
+ 			document.getElementById("vietnam-temple").src="vietnam-temple.jpg";
  		}
 
  		/* display entrees container when entrees week one navbar is clicked */
@@ -414,21 +431,21 @@
  		/* change from main appetizers photo "biker.jpeg" to individual appetizers item photo */
 
 				function drinksItem1(){
- 			document.getElementById("man-sitting").src="../origin/images/drinks.jpg";
+ 			document.getElementById("man-sitting").src="drinks.jpg";
  			}
 
 				function drinksItem2(){
- 			document.getElementById("man-sitting").src="../origin/images/drinks2.jpg";
+ 			document.getElementById("man-sitting").src="drinks2.jpg";
  			}
 
  				function drinksItem3(){
- 			document.getElementById("man-sitting").src="../origin/images/drinks3.jpg";
+ 			document.getElementById("man-sitting").src="drinks3.jpg";
  			}
 
  			/* change photo back to man-sitting main photo "man-sitting.jpeg" */
 
  				function openManSittingPhoto() {
- 			document.getElementById("man-sitting").src="../origin/images/man-sitting.jpeg";
+ 			document.getElementById("man-sitting").src="man-sitting.jpeg";
 
  				}
  		
@@ -444,15 +461,15 @@
  		/* change from main desserts photo "statue.jpeg" to individual desserts item photo */
 
 				function dessertItem1(){
- 			document.getElementById("statue").src="../origin/images/dessert1.jpg";
+ 			document.getElementById("statue").src="dessert.jpg";
  			}
 
 				function dessertItem2(){
- 			document.getElementById("statue").src="../origin/images/dessert2.jpg";
+ 			document.getElementById("statue").src="dessert2.jpg";
  			}
 
  				function dessertItem3(){
- 			document.getElementById("statue").src="../origin/images/dessert3.jpg";
+ 			document.getElementById("statue").src="dessert3.jpg";
  			}
 
  			/* change photo back to dessert main photo "statue.jpeg" */
@@ -468,9 +485,9 @@
  		}
 
 
- 				function openDessertPhoto() {
- 				document.getElementById('desserts-container').style.display='none';
-			}
+ 				function openDessertPhoto() {	
+ 				document.getElementById("desserts-container").style.display = "block";
+			} 
 			
 		</script>
 
