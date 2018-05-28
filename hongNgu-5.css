@@ -172,6 +172,12 @@ nav{
 	display: none;
 }
 
+#map{
+	position: relative;
+	height: 640px;
+	display: none;
+}
+
 .pimg1 {
 	position: relative;
 	background-image: url('logo-no-bg-2.png');
