@@ -94,7 +94,7 @@
 					        		</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					      			<a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayAddress();">ADDRESS</a>
-					      			<a href="map.html" target="_blank" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayMap();">MAP</a>
+					      			<a href="#map" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayMap();">MAP</a>
 							</div>
 					      		</li>
 					    	</ul>
@@ -335,6 +335,9 @@
 		</div>
 	</div>
 
+	
+	<div id="map"></div>
+
 
 		<!--<footer>
 			<p><a href="#"> <span style="color: #ed3e09;"> Darnell Kelley Web Design & Development</span></a> &copy 2018</p>
@@ -488,8 +491,31 @@
  				function openDessertPhoto() {	
  				document.getElementById("desserts-container").style.display = "block";
 			} 
+
+			/************ Display Map *************************************/
+
+				function displayMap(){
+					document.getElementById('map').style.display = "block";
+				}
+
+			/******************Initialize Map***************************/
+
+			function initMap() {
+			var location = {lat: 41.973477, lng: -87.658281};
+			var map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 12,
+				center: location
+			});
+
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+		}
 			
 		</script>
+
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOKRSo7dpKTP1syhuahYRcwM1q4g-Tles&callback=initMap"></script>
 
 
 </body>
