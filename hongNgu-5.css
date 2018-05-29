@@ -174,7 +174,7 @@ nav{
 
 #map{
 	position: relative;
-	height: 640px;
+	height: 100vh;
 	display: none;
 }
 
