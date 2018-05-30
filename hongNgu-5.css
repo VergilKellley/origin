@@ -172,10 +172,20 @@ nav{
 	display: none;
 }
 
-#map{
+#address{
+	position: relative;
+	top: 200px;
+	left: 65px;
+}
+
+#map-container{
 	position: relative;
 	height: 100vh;
 	display: none;
+}
+
+#map{
+	height: 100vh;
 }
 
 .pimg1 {
