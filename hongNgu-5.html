@@ -94,7 +94,7 @@
 					        		</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					      			<a style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayAddress();">ADDRESS</a>
-					      			<a href="#map" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayMap();">MAP</a>
+					      			<a href="#map-container" style="color: #fff; background-color: rgba(0,0,0,.7);" class="dropdown-item" onclick="displayMap();">MAP</a>
 							</div>
 					      		</li>
 					    	</ul>
@@ -335,8 +335,19 @@
 		</div>
 	</div>
 
-				<div id="map"></div>
-			
+			<div class="container-fluid" id="map-container">
+				<div class="row">
+					<div class="col-md-9">
+						<div id="map"></div>
+					</div>
+					<div class="col-md-3" id="address">
+						<p><span id="name">Hong Ngu</p>
+						<p>1023 West Argyle</p>
+						<p>Chicago Illinois 60640</p>
+						<p>(773) 973 - 9694</p>
+					</div>
+				</div>
+			</div>
 
 			
 	
@@ -497,7 +508,7 @@
 			/************ Display Map *************************************/
 
 				function displayMap(){
-					document.getElementById('map').style.display = "block";
+					document.getElementById('map-container').style.display = "block";
 				}
 
 			/******************Initialize Map***************************/
