@@ -181,12 +181,6 @@ nav{
 	width: 100vw;
 }
 
-.address{
-	position: relative;
-	background-color: rgba(0, 0, 0, .5);
-	z-index:2; 
-}
-
 #address p{
 	position: relative;
 	top: 200px;
