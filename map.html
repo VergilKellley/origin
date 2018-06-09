@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hong Ngu Google Map</title>
+
+	<style>
+		
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		#map {
+			position: relative;
+			top: 100px;
+			left: 400px;
+			height: 500px;
+			width: 50%;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div id="map"></div>
+
+
+	<script>
+		
+		function initMap() {
+			var location = {lat: 41.973477, lng: -87.658281};
+			var map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 10,
+				center: location
+			});
+
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+		}
+
+	</script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOKRSo7dpKTP1syhuahYRcwM1q4g-Tles&callback=initMap"></script>
+</body>
+</html>
